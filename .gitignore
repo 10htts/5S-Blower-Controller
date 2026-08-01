@@ -1,5 +1,7 @@
 __pycache__/
 *.pyc
+*.kicad_prl
+*.lck
 build/
 manufacturing/release-revA.zip
 hardware/outputs/*
