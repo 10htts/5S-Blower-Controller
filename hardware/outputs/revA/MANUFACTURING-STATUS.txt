@@ -1,0 +1,2 @@
+BLOCKED: KiCad DRC returned violations
+REFERENCE REVISION ONLY. Do not order until DRC, electrical review, thermal testing, and mechanical fit are complete.

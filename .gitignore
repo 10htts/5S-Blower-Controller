@@ -4,3 +4,5 @@ build/
 manufacturing/release-revA.zip
 hardware/outputs/*
 !hardware/outputs/.gitkeep
+!hardware/outputs/revA/
+hardware/outputs/revA/*.png
