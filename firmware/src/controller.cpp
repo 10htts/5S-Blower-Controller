@@ -1,0 +1,3 @@
+#include "controller.h"
+#include "config.h"
+void Controller::step(const Inputs& i,float dt){ duty=0; if(state==State::FAULT_LATCHED){ if(!i.trigger) state=State::OFF; return; } if(i.temperature>=config::OT_TRIP_C){state=State::OVERTEMPERATURE;return;} if(i.current>=40){state=State::OVERCURRENT;return;} if(i.voltage<config::UV_TRIP_V){state=State::UNDERVOLTAGE;return;} if(!i.trigger){state=State::OFF;return;} if(state==State::OFF)state=State::ARMING; if(state==State::ARMING)state=State::SOFT_START; if(state==State::SOFT_START){duty+=dt/config::SOFT_START_S; if(duty>=1){duty=1;state=State::RUN;}} else if(state==State::RUN)duty=1; }

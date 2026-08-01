@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+build/
+manufacturing/release-revA.zip
+hardware/outputs/*
+!hardware/outputs/.gitkeep

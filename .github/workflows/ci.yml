@@ -1,0 +1,16 @@
+name: validation
+on: [push, pull_request]
+jobs:
+  firmware:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python scripts/check_design.py
+      - run: python -m unittest discover firmware/tests -v
+  kicad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo 'KiCad ERC/DRC job is intentionally gated until a validated schematic and PCB revision is committed.'
