@@ -1,92 +1,96 @@
 ** Drc report for blower-controller.kicad_pcb **
-** Created on 2026-08-01T15:44:03 **
+** Created on 2026-08-01T15:43:51 **
 ** Report includes: Errors, Warnings **
 
-** Found 156 DRC violations **
+** Found 157 DRC violations **
 [tracks_crossing]: Tracks crossing
     Local override; error
-    @(53.0000 mm, 30.0000 mm): Track [VIN_PROTECTED] on F.Cu, length 9.0000 mm
     @(62.0000 mm, 30.0000 mm): Track [MOTOR+] on F.Cu, length 53.1507 mm
+    @(53.0000 mm, 30.0000 mm): Track [VIN_PROTECTED] on F.Cu, length 9.0000 mm
 [shorting_items]: Items shorting two nets (nets GND and SW_NODE)
     Local override; error
     @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
     @(98.0000 mm, 41.6200 mm): Track [SW_NODE] on B.Cu, length 21.6847 mm
-[shorting_items]: Items shorting two nets (nets SW_NODE and GATE)
-    Local override; error
-    @(78.0000 mm, 62.0000 mm): Track [SW_NODE] on B.Cu, length 9.4340 mm
-    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(42.0000 mm, 44.0000 mm): Track [NTC] on F.Cu, length 4.0000 mm
-    @(39.0000 mm, 51.0000 mm): Track [CURRENT] on F.Cu, length 14.3178 mm
-[shorting_items]: Items shorting two nets (nets TRIGGER and GND)
-    Local override; error
-    @(25.0000 mm, 70.0000 mm): PTH pad 1 [TRIGGER] of J3
-    @(25.0000 mm, 37.6200 mm): Track [GND] on B.Cu, length 40.0000 mm
-[tracks_crossing]: Tracks crossing
+[shorting_items]: Items shorting two nets (nets PWM and CURRENT)
     Local override; error
     @(36.0000 mm, 51.0000 mm): Track [PWM] on F.Cu, length 13.0384 mm
-    @(44.0000 mm, 44.0000 mm): Track [NTC] on F.Cu, length 12.0830 mm
-[shorting_items]: Items shorting two nets (nets GATE and PWM)
-    Local override; error
-    @(59.0000 mm, 48.0000 mm): Pad 1 [GATE] of R3 on F.Cu
-    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
-[shorting_items]: Items shorting two nets (nets GND and +5V)
-    Local override; error
-    @(49.0000 mm, 54.0000 mm): Pad 8 [GND] of U1 on F.Cu
-    @(49.0000 mm, 54.0000 mm): Track [+5V] on F.Cu, length 0.0000 mm
-[shorting_items]: Items shorting two nets (nets CURRENT and PWM)
-    Local override; error
     @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
-    @(36.0000 mm, 51.0000 mm): Track [PWM] on F.Cu, length 13.0384 mm
-[tracks_crossing]: Tracks crossing
+[shorting_items]: Items shorting two nets (nets GND and TRIGGER)
     Local override; error
-    @(39.0000 mm, 55.0000 mm): Track [NTC] on F.Cu, length 12.0830 mm
-    @(37.0000 mm, 55.0000 mm): Track [V_SENSE] on F.Cu, length 21.4009 mm
-[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0922 mm)
-    Local override; error
-    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
-    @(51.0000 mm, 50.0000 mm): Track [+5V] on F.Cu, length 0.0000 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
-    @(59.0000 mm, 48.0000 mm): Track [GATE] on F.Cu, length 4.0000 mm
-[shorting_items]: Items shorting two nets (nets V_SENSE and CURRENT)
-    Local override; error
-    @(46.0000 mm, 38.0000 mm): Pad 2 [V_SENSE] of R1 on F.Cu
-    @(39.0000 mm, 51.0000 mm): Track [CURRENT] on F.Cu, length 14.3178 mm
-[shorting_items]: Items shorting two nets (nets V_SENSE and GND)
-    Local override; error
-    @(50.0000 mm, 38.0000 mm): Track [V_SENSE] on F.Cu, length 4.0000 mm
-    @(53.0000 mm, 37.6200 mm): PTH pad 2 [GND] of D1
-[shorting_items]: Items shorting two nets (nets BATT+ and VIN_PROTECTED)
-    Local override; error
-    @(25.0000 mm, 30.0000 mm): Track [BATT+] on B.Cu, length 28.0000 mm
-    @(47.0000 mm, 30.0000 mm): PTH pad 2 [VIN_PROTECTED] of F1
+    @(25.0000 mm, 37.6200 mm): Track [GND] on B.Cu, length 40.0000 mm
+    @(25.0000 mm, 70.0000 mm): PTH pad 1 [TRIGGER] of J3
 [shorting_items]: Items shorting two nets (nets SW_NODE and GND)
     Local override; error
-    @(78.0000 mm, 50.0000 mm): Track [SW_NODE] on B.Cu, length 12.0000 mm
+    @(115.0000 mm, 41.6200 mm): Track [SW_NODE] on B.Cu, length 37.9371 mm
     @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
+[shorting_items]: Items shorting two nets (nets GATE and SW_NODE)
+    Local override; error
+    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
+    @(78.0000 mm, 62.0000 mm): Track [SW_NODE] on B.Cu, length 9.4340 mm
 [shorting_items]: Items shorting two nets (nets GND and SW_NODE)
     Local override; error
     @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
-    @(115.0000 mm, 41.6200 mm): Track [SW_NODE] on B.Cu, length 37.9371 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(42.0000 mm, 44.0000 mm): Track [NTC] on F.Cu, length 4.0000 mm
-    @(37.0000 mm, 55.0000 mm): Track [V_SENSE] on F.Cu, length 21.4009 mm
+    @(78.0000 mm, 50.0000 mm): Track [SW_NODE] on B.Cu, length 12.0000 mm
 [shorting_items]: Items shorting two nets (nets TRIGGER and +5V)
     Local override; error
     @(33.0000 mm, 51.0000 mm): Track [TRIGGER] on F.Cu, length 20.6155 mm
     @(33.0000 mm, 51.0000 mm): Pad 1 [+5V] of U2 on F.Cu
+[shorting_items]: Items shorting two nets (nets VIN_PROTECTED and BATT+)
+    Local override; error
+    @(47.0000 mm, 30.0000 mm): PTH pad 2 [VIN_PROTECTED] of F1
+    @(25.0000 mm, 30.0000 mm): Track [BATT+] on B.Cu, length 28.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(36.0000 mm, 51.0000 mm): Track [PWM] on F.Cu, length 13.0384 mm
+    @(39.0000 mm, 55.0000 mm): Track [NTC] on F.Cu, length 12.0830 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(37.0000 mm, 55.0000 mm): Track [V_SENSE] on F.Cu, length 21.4009 mm
+    @(44.0000 mm, 44.0000 mm): Track [NTC] on F.Cu, length 12.0830 mm
+[shorting_items]: Items shorting two nets (nets CURRENT and V_SENSE)
+    Local override; error
+    @(39.0000 mm, 51.0000 mm): Track [CURRENT] on F.Cu, length 14.3178 mm
+    @(46.0000 mm, 38.0000 mm): Pad 2 [V_SENSE] of R1 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
+    @(59.0000 mm, 48.0000 mm): Track [GATE] on F.Cu, length 4.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(39.0000 mm, 51.0000 mm): Track [CURRENT] on F.Cu, length 14.3178 mm
+    @(42.0000 mm, 44.0000 mm): Track [NTC] on F.Cu, length 4.0000 mm
+[shorting_items]: Items shorting two nets (nets V_SENSE and CURRENT)
+    Local override; error
+    @(37.0000 mm, 55.0000 mm): Track [V_SENSE] on F.Cu, length 21.4009 mm
+    @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(49.0000 mm, 54.0000 mm): Track [GND] on F.Cu, length 16.0000 mm
+    @(49.0000 mm, 54.0000 mm): Track [+5V] on F.Cu, length 0.0000 mm
+[shorting_items]: Items shorting two nets (nets +5V and GND)
+    Local override; error
+    @(49.0000 mm, 54.0000 mm): Track [+5V] on F.Cu, length 0.0000 mm
+    @(49.0000 mm, 54.0000 mm): Pad 8 [GND] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets PWM and GATE)
+    Local override; error
+    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
+    @(59.0000 mm, 48.0000 mm): Pad 1 [GATE] of R3 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and V_SENSE)
+    Local override; error
+    @(53.0000 mm, 37.6200 mm): PTH pad 2 [GND] of D1
+    @(50.0000 mm, 38.0000 mm): Track [V_SENSE] on F.Cu, length 4.0000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0922 mm)
+    Local override; error
+    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
+    @(51.0000 mm, 50.0000 mm): Track [+5V] on F.Cu, length 0.0000 mm
 [shorting_items]: Items shorting two nets (nets GATE and SW_NODE)
     Local override; error
     @(75.4600 mm, 50.0000 mm): PTH pad 1 [GATE] of Q1
     @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
-[shorting_items]: Items shorting two nets (nets +5V and GND)
+[shorting_items]: Items shorting two nets (nets SW_NODE and GATE)
     Local override; error
-    @(33.0000 mm, 51.0000 mm): Pad 1 [+5V] of U2 on F.Cu
-    @(35.0000 mm, 51.0000 mm): Pad 2 [GND] of U2 on F.Cu
+    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
+    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
 [shorting_items]: Items shorting two nets (nets GATE and SW_NODE)
     Local override; error
     @(75.4600 mm, 50.0000 mm): PTH pad 1 [GATE] of Q1
@@ -95,94 +99,106 @@
     Local override; error
     @(49.0000 mm, 50.0000 mm): Pad 1 [PWM] of U1 on F.Cu
     @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
-[shorting_items]: Items shorting two nets (nets +5V and PWM)
-    Local override; error
-    @(60.0000 mm, 70.0000 mm): PTH pad 1 [+5V] of J4
-    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
-[shorting_items]: Items shorting two nets (nets GATE and SW_NODE)
-    Local override; error
-    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
-    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
-[shorting_items]: Items shorting two nets (nets +5V and PWM)
-    Local override; error
-    @(60.0000 mm, 70.0000 mm): PTH pad 1 [+5V] of J4
-    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
 [shorting_items]: Items shorting two nets (nets SW_NODE and GND)
     Local override; error
-    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
-    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
-[shorting_items]: Items shorting two nets (nets GND and TRIGGER)
+    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
+    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
+[shorting_items]: Items shorting two nets (nets GND and SW_NODE)
     Local override; error
+    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
+    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
+[shorting_items]: Items shorting two nets (nets SW_NODE and GATE)
+    Local override; error
+    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
+    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
+[shorting_items]: Items shorting two nets (nets +5V and GND)
+    Local override; error
+    @(33.0000 mm, 51.0000 mm): Pad 1 [+5V] of U2 on F.Cu
     @(35.0000 mm, 51.0000 mm): Pad 2 [GND] of U2 on F.Cu
-    @(37.0000 mm, 51.0000 mm): Pad 3 [TRIGGER] of U2 on F.Cu
-[shorting_items]: Items shorting two nets (nets GATE and SW_NODE)
+[shorting_items]: Items shorting two nets (nets GND and SW_NODE)
     Local override; error
-    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
-    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
+    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
+    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
+[shorting_items]: Items shorting two nets (nets +5V and GND)
+    Local override; error
+    @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
+    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
 [shorting_items]: Items shorting two nets (nets SW_NODE and GND)
     Local override; error
-    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
-    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
-[shorting_items]: Items shorting two nets (nets GND and +5V)
-    Local override; error
-    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
-    @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
-[shorting_items]: Items shorting two nets (nets GND and SW_NODE)
-    Local override; error
-    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
     @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
-[shorting_items]: Items shorting two nets (nets GND and PWM)
+    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
+[shorting_items]: Items shorting two nets (nets PWM and +5V)
     Local override; error
-    @(60.0000 mm, 75.0800 mm): PTH pad 3 [GND] of J4
     @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
-[shorting_items]: Items shorting two nets (nets CURRENT and TRIGGER)
+    @(60.0000 mm, 70.0000 mm): PTH pad 1 [+5V] of J4
+[shorting_items]: Items shorting two nets (nets TRIGGER and CURRENT)
     Local override; error
-    @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
     @(37.0000 mm, 51.0000 mm): Pad 3 [TRIGGER] of U2 on F.Cu
-[shorting_items]: Items shorting two nets (nets GND and SW_NODE)
+    @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
+[shorting_items]: Items shorting two nets (nets GATE and GND)
     Local override; error
-    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
-    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
-[shorting_items]: Items shorting two nets (nets GND and GATE)
-    Local override; error
-    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
     @(55.0000 mm, 50.0000 mm): Pad 4 [GATE] of U1 on F.Cu
+    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets TRIGGER and GND)
+    Local override; error
+    @(37.0000 mm, 51.0000 mm): Pad 3 [TRIGGER] of U2 on F.Cu
+    @(35.0000 mm, 51.0000 mm): Pad 2 [GND] of U2 on F.Cu
+[shorting_items]: Items shorting two nets (nets PWM and GND)
+    Local override; error
+    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
+    @(60.0000 mm, 75.0800 mm): PTH pad 3 [GND] of J4
+[shorting_items]: Items shorting two nets (nets GATE and GND)
+    Local override; error
+    @(55.0000 mm, 54.0000 mm): Pad 5 [GATE] of U1 on F.Cu
+    @(53.0000 mm, 54.0000 mm): Pad 6 [GND] of U1 on F.Cu
 [shorting_items]: Items shorting two nets (nets V_SENSE and NTC)
     Local override; error
     @(37.0000 mm, 55.0000 mm): Pad 6 [V_SENSE] of U2 on F.Cu
     @(39.0000 mm, 55.0000 mm): Pad 5 [NTC] of U2 on F.Cu
-[shorting_items]: Items shorting two nets (nets PWM and V_SENSE)
-    Local override; error
-    @(35.0000 mm, 55.0000 mm): Pad 7 [PWM] of U2 on F.Cu
-    @(37.0000 mm, 55.0000 mm): Pad 6 [V_SENSE] of U2 on F.Cu
-[shorting_items]: Items shorting two nets (nets GND and PWM)
-    Local override; error
-    @(60.0000 mm, 75.0800 mm): PTH pad 3 [GND] of J4
-    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
-[shorting_items]: Items shorting two nets (nets PWM and GND)
-    Local override; error
-    @(35.0000 mm, 55.0000 mm): Pad 7 [PWM] of U2 on F.Cu
-    @(33.0000 mm, 55.0000 mm): Pad 8 [GND] of U2 on F.Cu
-[shorting_items]: Items shorting two nets (nets GND and GATE)
-    Local override; error
-    @(53.0000 mm, 54.0000 mm): Pad 6 [GND] of U1 on F.Cu
-    @(55.0000 mm, 54.0000 mm): Pad 5 [GATE] of U1 on F.Cu
-[shorting_items]: Items shorting two nets (nets GND and +5V)
-    Local override; error
-    @(53.0000 mm, 54.0000 mm): Pad 6 [GND] of U1 on F.Cu
-    @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
 [shorting_items]: Items shorting two nets (nets +5V and GND)
     Local override; error
     @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
     @(49.0000 mm, 54.0000 mm): Pad 8 [GND] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets +5V and GND)
+    Local override; error
+    @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
+    @(53.0000 mm, 54.0000 mm): Pad 6 [GND] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets V_SENSE and PWM)
+    Local override; error
+    @(37.0000 mm, 55.0000 mm): Pad 6 [V_SENSE] of U2 on F.Cu
+    @(35.0000 mm, 55.0000 mm): Pad 7 [PWM] of U2 on F.Cu
+[shorting_items]: Items shorting two nets (nets PWM and +5V)
+    Local override; error
+    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
+    @(60.0000 mm, 70.0000 mm): PTH pad 1 [+5V] of J4
+[shorting_items]: Items shorting two nets (nets PWM and GND)
+    Local override; error
+    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
+    @(60.0000 mm, 75.0800 mm): PTH pad 3 [GND] of J4
+[shorting_items]: Items shorting two nets (nets GND and PWM)
+    Local override; error
+    @(33.0000 mm, 55.0000 mm): Pad 8 [GND] of U2 on F.Cu
+    @(35.0000 mm, 55.0000 mm): Pad 7 [PWM] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(62.0000 mm, 30.0000 mm): Track [MOTOR+] on F.Cu, length 53.1507 mm
+    @(62.0000 mm, 30.0000 mm): PTH pad 1 [VIN_PROTECTED] of C1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(25.0000 mm, 30.0000 mm): Track [BATT+] on B.Cu, length 28.0000 mm
+    @(47.0000 mm, 30.0000 mm): PTH pad 2 [VIN_PROTECTED] of F1
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(98.0000 mm, 41.6200 mm): Track [SW_NODE] on B.Cu, length 21.6847 mm
     @(75.4600 mm, 50.0000 mm): PTH pad 1 [GATE] of Q1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(36.0000 mm, 51.0000 mm): Track [PWM] on F.Cu, length 13.0384 mm
-    @(35.0000 mm, 51.0000 mm): Pad 2 [GND] of U2 on F.Cu
+    @(25.0000 mm, 37.6200 mm): Track [GND] on B.Cu, length 40.0000 mm
+    @(25.0000 mm, 70.0000 mm): PTH pad 1 [TRIGGER] of J3
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(115.0000 mm, 41.6200 mm): Track [SW_NODE] on B.Cu, length 37.9371 mm
+    @(75.4600 mm, 50.0000 mm): PTH pad 1 [GATE] of Q1
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(98.0000 mm, 41.6200 mm): Track [SW_NODE] on B.Cu, length 21.6847 mm
@@ -191,138 +207,14 @@
     Rule: board setup solder mask min width; error
     @(50.0000 mm, 38.0000 mm): Track [V_SENSE] on F.Cu, length 4.0000 mm
     @(53.0000 mm, 37.6200 mm): PTH pad 2 [GND] of D1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(36.0000 mm, 51.0000 mm): Track [PWM] on F.Cu, length 13.0384 mm
-    @(37.0000 mm, 51.0000 mm): Pad 3 [TRIGGER] of U2 on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(78.0000 mm, 50.0000 mm): Track [SW_NODE] on B.Cu, length 12.0000 mm
-    @(75.4600 mm, 50.0000 mm): PTH pad 1 [GATE] of Q1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(37.0000 mm, 55.0000 mm): Track [V_SENSE] on F.Cu, length 21.4009 mm
-    @(46.0000 mm, 44.0000 mm): Pad 2 [NTC] of R4 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
-    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(25.0000 mm, 37.6200 mm): Track [GND] on B.Cu, length 40.0000 mm
-    @(25.0000 mm, 70.0000 mm): PTH pad 1 [TRIGGER] of J3
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(62.0000 mm, 30.0000 mm): Track [MOTOR+] on F.Cu, length 53.1507 mm
-    @(62.0000 mm, 30.0000 mm): PTH pad 1 [VIN_PROTECTED] of C1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(49.0000 mm, 50.0000 mm): Pad 1 [PWM] of U1 on F.Cu
-    @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
-    @(37.0000 mm, 51.0000 mm): Pad 3 [TRIGGER] of U2 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(37.0000 mm, 55.0000 mm): Pad 6 [V_SENSE] of U2 on F.Cu
-    @(39.0000 mm, 55.0000 mm): Pad 5 [NTC] of U2 on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(25.0000 mm, 30.0000 mm): Track [BATT+] on B.Cu, length 28.0000 mm
-    @(47.0000 mm, 30.0000 mm): PTH pad 2 [VIN_PROTECTED] of F1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(36.0000 mm, 51.0000 mm): Track [PWM] on F.Cu, length 13.0384 mm
-    @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
-    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(60.0000 mm, 70.0000 mm): PTH pad 1 [+5V] of J4
-    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(37.0000 mm, 55.0000 mm): Pad 6 [V_SENSE] of U2 on F.Cu
-    @(35.0000 mm, 55.0000 mm): Pad 7 [PWM] of U2 on F.Cu
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(25.0000 mm, 30.0000 mm): Track [BATT+] on B.Cu, length 28.0000 mm
     @(53.0000 mm, 30.0000 mm): PTH pad 1 [VIN_PROTECTED] of D1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
-    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(60.0000 mm, 70.0000 mm): PTH pad 1 [+5V] of J4
-    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(78.0000 mm, 50.0000 mm): Track [SW_NODE] on B.Cu, length 12.0000 mm
-    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
-    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(49.0000 mm, 54.0000 mm): Track [+5V] on F.Cu, length 0.0000 mm
-    @(49.0000 mm, 54.0000 mm): Pad 8 [GND] of U1 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
     @(75.4600 mm, 50.0000 mm): PTH pad 1 [GATE] of Q1
-    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
-    @(53.0000 mm, 54.0000 mm): Pad 6 [GND] of U1 on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(78.0000 mm, 50.0000 mm): Track [SW_NODE] on B.Cu, length 12.0000 mm
-    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
-    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(78.0000 mm, 50.0000 mm): Track [SW_NODE] on B.Cu, length 12.0000 mm
-    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
-    @(49.0000 mm, 54.0000 mm): Pad 8 [GND] of U1 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(55.0000 mm, 50.0000 mm): Pad 4 [GATE] of U1 on F.Cu
-    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(78.0000 mm, 62.0000 mm): Track [SW_NODE] on B.Cu, length 9.4340 mm
-    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
-    @(60.0000 mm, 75.0800 mm): PTH pad 3 [GND] of J4
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
-    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
-    @(55.0000 mm, 50.0000 mm): Pad 4 [GATE] of U1 on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
-    @(60.0000 mm, 75.0800 mm): PTH pad 3 [GND] of J4
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
-    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(50.0000 mm, 38.0000 mm): Track [V_SENSE] on F.Cu, length 4.0000 mm
@@ -330,11 +222,167 @@
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
-    @(59.0000 mm, 48.0000 mm): Pad 1 [GATE] of R3 on F.Cu
+    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
+    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(115.0000 mm, 41.6200 mm): Track [SW_NODE] on B.Cu, length 37.9371 mm
+    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(36.0000 mm, 51.0000 mm): Track [PWM] on F.Cu, length 13.0384 mm
+    @(35.0000 mm, 51.0000 mm): Pad 2 [GND] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
+    @(53.0000 mm, 54.0000 mm): Pad 6 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(78.0000 mm, 50.0000 mm): Track [SW_NODE] on B.Cu, length 12.0000 mm
+    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(35.0000 mm, 51.0000 mm): Pad 2 [GND] of U2 on F.Cu
+    @(33.0000 mm, 51.0000 mm): Pad 1 [+5V] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(37.0000 mm, 55.0000 mm): Pad 6 [V_SENSE] of U2 on F.Cu
+    @(39.0000 mm, 55.0000 mm): Pad 5 [NTC] of U2 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(33.0000 mm, 55.0000 mm): Pad 8 [GND] of U2 on F.Cu
     @(35.0000 mm, 55.0000 mm): Pad 7 [PWM] of U2 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(78.0000 mm, 50.0000 mm): Track [SW_NODE] on B.Cu, length 12.0000 mm
+    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
+    @(37.0000 mm, 51.0000 mm): Pad 3 [TRIGGER] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(49.0000 mm, 50.0000 mm): Pad 1 [PWM] of U1 on F.Cu
+    @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(35.0000 mm, 51.0000 mm): Pad 2 [GND] of U2 on F.Cu
+    @(37.0000 mm, 51.0000 mm): Pad 3 [TRIGGER] of U2 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(78.0000 mm, 50.0000 mm): Track [SW_NODE] on B.Cu, length 12.0000 mm
+    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(37.0000 mm, 55.0000 mm): Pad 6 [V_SENSE] of U2 on F.Cu
+    @(35.0000 mm, 55.0000 mm): Pad 7 [PWM] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(33.0000 mm, 51.0000 mm): Track [TRIGGER] on F.Cu, length 20.6155 mm
+    @(33.0000 mm, 51.0000 mm): Pad 1 [+5V] of U2 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
+    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(55.0000 mm, 50.0000 mm): Pad 4 [GATE] of U1 on F.Cu
+    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(37.0000 mm, 55.0000 mm): Track [V_SENSE] on F.Cu, length 21.4009 mm
+    @(46.0000 mm, 44.0000 mm): Pad 2 [NTC] of R4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
+    @(60.0000 mm, 75.0800 mm): PTH pad 3 [GND] of J4
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(36.0000 mm, 51.0000 mm): Track [PWM] on F.Cu, length 13.0384 mm
+    @(37.0000 mm, 51.0000 mm): Pad 3 [TRIGGER] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
+    @(55.0000 mm, 50.0000 mm): Pad 4 [GATE] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(55.0000 mm, 54.0000 mm): Pad 5 [GATE] of U1 on F.Cu
+    @(53.0000 mm, 54.0000 mm): Pad 6 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
+    @(49.0000 mm, 54.0000 mm): Pad 8 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(37.0000 mm, 55.0000 mm): Track [V_SENSE] on F.Cu, length 21.4009 mm
+    @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(42.0000 mm, 44.0000 mm): Track [NTC] on F.Cu, length 4.0000 mm
+    @(42.0000 mm, 44.0000 mm): Pad 1 [+5V] of R4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
+    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(60.0000 mm, 70.0000 mm): PTH pad 1 [+5V] of J4
+    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(36.0000 mm, 51.0000 mm): Track [PWM] on F.Cu, length 13.0384 mm
+    @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
+    @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
+    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
+    @(60.0000 mm, 70.0000 mm): PTH pad 1 [+5V] of J4
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(39.0000 mm, 51.0000 mm): Track [CURRENT] on F.Cu, length 14.3178 mm
+    @(46.0000 mm, 38.0000 mm): Pad 2 [V_SENSE] of R1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(78.0000 mm, 62.0000 mm): Track [SW_NODE] on B.Cu, length 9.4340 mm
+    @(80.5400 mm, 62.0000 mm): PTH pad 3 [GND] of Q2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(49.0000 mm, 54.0000 mm): Track [+5V] on F.Cu, length 0.0000 mm
+    @(49.0000 mm, 54.0000 mm): Pad 8 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(39.0000 mm, 51.0000 mm): Track [CURRENT] on F.Cu, length 14.3178 mm
+    @(42.0000 mm, 44.0000 mm): Pad 1 [+5V] of R4 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(60.0000 mm, 72.5400 mm): PTH pad 2 [PWM] of J4
+    @(60.0000 mm, 75.0800 mm): PTH pad 3 [GND] of J4
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
+    @(78.0000 mm, 62.0000 mm): PTH pad 2 [SW_NODE] of Q2
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(78.0000 mm, 62.0000 mm): Track [SW_NODE] on B.Cu, length 9.4340 mm
+    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(75.4600 mm, 50.0000 mm): PTH pad 1 [GATE] of Q1
+    @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
+    @(59.0000 mm, 48.0000 mm): Pad 1 [GATE] of R3 on F.Cu
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
@@ -343,54 +391,10 @@
     Rule: board setup solder mask min width; error
     @(75.4600 mm, 50.0000 mm): PTH pad 1 [GATE] of Q1
     @(78.0000 mm, 50.0000 mm): PTH pad 2 [SW_NODE] of Q1
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(115.0000 mm, 41.6200 mm): Track [SW_NODE] on B.Cu, length 37.9371 mm
-    @(75.4600 mm, 50.0000 mm): PTH pad 1 [GATE] of Q1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(35.0000 mm, 51.0000 mm): Pad 2 [GND] of U2 on F.Cu
-    @(33.0000 mm, 51.0000 mm): Pad 1 [+5V] of U2 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(37.0000 mm, 55.0000 mm): Track [V_SENSE] on F.Cu, length 21.4009 mm
-    @(39.0000 mm, 51.0000 mm): Pad 4 [CURRENT] of U2 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(55.0000 mm, 54.0000 mm): Pad 5 [GATE] of U1 on F.Cu
-    @(53.0000 mm, 54.0000 mm): Pad 6 [GND] of U1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(49.0000 mm, 50.0000 mm): Track [PWM] on F.Cu, length 10.1980 mm
     @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(115.0000 mm, 41.6200 mm): Track [SW_NODE] on B.Cu, length 37.9371 mm
-    @(80.5400 mm, 50.0000 mm): PTH pad 3 [GND] of Q1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(35.0000 mm, 51.0000 mm): Pad 2 [GND] of U2 on F.Cu
-    @(37.0000 mm, 51.0000 mm): Pad 3 [TRIGGER] of U2 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(42.0000 mm, 44.0000 mm): Track [NTC] on F.Cu, length 4.0000 mm
-    @(42.0000 mm, 44.0000 mm): Pad 1 [+5V] of R4 on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(78.0000 mm, 62.0000 mm): Track [SW_NODE] on B.Cu, length 9.4340 mm
-    @(75.4600 mm, 62.0000 mm): PTH pad 1 [GATE] of Q2
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(33.0000 mm, 51.0000 mm): Track [TRIGGER] on F.Cu, length 20.6155 mm
-    @(33.0000 mm, 51.0000 mm): Pad 1 [+5V] of U2 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(39.0000 mm, 51.0000 mm): Track [CURRENT] on F.Cu, length 14.3178 mm
-    @(46.0000 mm, 38.0000 mm): Pad 2 [V_SENSE] of R1 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(39.0000 mm, 51.0000 mm): Track [CURRENT] on F.Cu, length 14.3178 mm
-    @(42.0000 mm, 44.0000 mm): Pad 1 [+5V] of R4 on F.Cu
 [track_dangling]: Track has unconnected end
     Local override; warning
     @(78.0000 mm, 62.0000 mm): Track [SW_NODE] on B.Cu, length 9.4340 mm
@@ -628,7 +632,7 @@
     @(53.0000 mm, 50.0000 mm): Pad 3 [GND] of U1 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(36.0000 mm, 77.6200 mm): Track [GND] on B.Cu, length 24.1340 mm
+    @(49.0000 mm, 70.0000 mm): Track [GND] on F.Cu, length 12.1164 mm
     @(80.5400 mm, 62.0000 mm): Track [GND] on F.Cu, length 8.0000 mm
 [unconnected_items]: Missing connection between items
     Local override; error
@@ -660,19 +664,19 @@
     @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
+    @(51.0000 mm, 50.0000 mm): Track [+5V] on F.Cu, length 0.0000 mm
     @(42.0000 mm, 44.0000 mm): Pad 1 [+5V] of R4 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
-    @(51.0000 mm, 50.0000 mm): Pad 2 [+5V] of U1 on F.Cu
+    @(51.0000 mm, 50.0000 mm): Track [+5V] on F.Cu, length 0.0000 mm
 [unconnected_items]: Missing connection between items
     Local override; error
     @(51.0000 mm, 54.0000 mm): Pad 7 [+5V] of U1 on F.Cu
     @(60.0000 mm, 70.0000 mm): PTH pad 1 [+5V] of J4
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(39.0000 mm, 55.0000 mm): Track [NTC] on F.Cu, length 12.0830 mm
+    @(44.0000 mm, 44.0000 mm): Track [NTC] on F.Cu, length 12.0830 mm
     @(36.0000 mm, 70.0000 mm): PTH pad 1 [NTC] of TH1
 [unconnected_items]: Missing connection between items
     Local override; error
