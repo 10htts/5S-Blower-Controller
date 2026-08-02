@@ -1,0 +1,17 @@
+VIA_IN_PAD_COUNT=15
+Each entry is a drilled through-via whose center intersects SMD pad copper. Review dogbone routing or the required fill/cap/tenting process.
+x=3.5134 mm y=37.3239 mm net=GND pads=C15.2
+x=12.3000 mm y=23.1750 mm net=GND pads=R15.2
+x=15.4000 mm y=15.5000 mm net=VBAT pads=D4.2
+x=20.0000 mm y=10.5000 mm net=SW pads=TP8.1
+x=27.0000 mm y=26.5000 mm net=ISNS pads=Q1.2,Q1.unnumbered
+x=27.8000 mm y=32.0950 mm net=VDRV pads=U2.8
+x=29.2750 mm y=42.0000 mm net=GND pads=C18.2
+x=34.8505 mm y=41.9913 mm net=GND pads=U5.2
+x=35.8691 mm y=41.0500 mm net=CUR pads=U5.1
+x=44.0000 mm y=42.0000 mm net=CUR pads=TP5.1
+x=52.0000 mm y=26.5000 mm net=ISNS pads=Q2.2,Q2.unnumbered
+x=54.8787 mm y=38.8550 mm net=GND pads=C5.2
+x=55.0050 mm y=29.2550 mm net=GND pads=C3.2
+x=55.0050 mm y=33.2550 mm net=GND pads=C4.2
+x=63.8000 mm y=17.0000 mm net=GND pads=D1.2

@@ -8,3 +8,5 @@ hardware/outputs/*
 !hardware/outputs/.gitkeep
 !hardware/outputs/revA/
 hardware/outputs/revA/*.png
+!hardware/outputs/revC/
+tmp/

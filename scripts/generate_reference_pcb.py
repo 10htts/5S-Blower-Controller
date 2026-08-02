@@ -49,7 +49,7 @@ header = '''(kicad_pcb (version 20240108) (generator pcbnew)
 
 footprints = [
     fp("J1", "BATTERY", 25, 30, [("1", 0, 0, (1,"BATT+"), "rect"), ("2", 0, 7.62, (2,"GND"), "circle")]),
-    fp("F1", "30A_FUSE", 35, 30, [("1", 0, 0, (1,"BATT+"), "rect"), ("2", 12, 0, (3,"VIN_PROTECTED"), "circle")]),
+    fp("F1", "EXTERNAL_FUSE", 35, 30, [("1", 0, 0, (1,"BATT+"), "rect"), ("2", 12, 0, (3,"VIN_PROTECTED"), "circle")]),
     fp("D1", "SMBJ33A_TVS", 53, 30, [("1", 0, 0, (3,"VIN_PROTECTED"), "rect"), ("2", 0, 7.62, (2,"GND"), "circle")]),
     fp("C1", "100uF_35V", 62, 30, [("1", 0, 0, (3,"VIN_PROTECTED"), "rect"), ("2", 0, 7.62, (2,"GND"), "circle")]),
     fp("J2", "MOTOR", 115, 34, [("1", 0, 0, (4,"MOTOR+"), "rect"), ("2", 0, 7.62, (5,"SW_NODE"), "circle")]),

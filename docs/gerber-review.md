@@ -1,7 +1,7 @@
-# Gerber review record — Rev A preliminary
+# Gerber review record — Rev C CAD review
 
-Generated with KiCad 10 on 2026-08-01. The archive contains F.Cu, B.Cu, solder-mask, silkscreen, Edge.Cuts, Excellon drill, PCB PDF, schematic PDF, placement CSV, BOM, and the DRC report.
+Generated with KiCad 10.0.5 on 2026-08-02. The current archive is `manufacturing/pcbway-review-revC.zip`. It contains F.Cu, B.Cu, solder-mask, paste, silkscreen, Edge.Cuts, Excellon drill and drill-map files, PCB and schematic PDFs, placement CSV, BOM, DRC/ERC reports, board renders, and release notes.
 
-The 3D/rendered board was inspected. The board outline is 100 × 60 mm and the intended external connections are labelled. The review found that the current copper/pad connectivity is not acceptable: KiCad reports 156 DRC violations and 19 unconnected items. The Gerbers are therefore retained as a **preliminary review artifact only**, not a PCBWay order package.
+The top and bottom 3D renders, fabrication PDF, and both copper-layer plots were visually inspected. The generated outline is 77 × 62 mm. The external connections are labelled, the outline and holes are present, and no obvious missing copper layer or gross plot defect was observed. KiCad reports zero DRC violations, zero unconnected items, zero schematic-parity issues, and zero ERC errors or warnings. Courtyard presence/overlap and track endpoints centered on vias are active DRC checks.
 
-Required next action: correct the routed PCB, rerun DRC with zero violations, verify footprints and polarity against manufacturer datasheets, rerender both copper layers, and obtain independent review before changing the status to orderable.
+This review establishes CAD consistency only. It does not establish current capacity, transient margin, fuse coordination, component thermal limits in the enclosure, mechanical fit, EMI behavior, or assembly correctness. The package remains a **quotation/viewer review artifact only**, not authorization to place an order. Complete `docs/validation-plan.md` and obtain an independent Gerber and electrical review before changing that status.

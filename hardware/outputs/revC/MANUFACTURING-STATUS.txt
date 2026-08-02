@@ -1,0 +1,4 @@
+PASS: revC KiCad DRC/ERC returned no violations, including schematic parity
+BLOCKED: BOM/footprint procurement data is incomplete for C1,C2, C3-C5, C6, C7,C10, C8,C13,C15-C17,C19, C9, C11,C12,C14, C18, D1, D2, J6, R1, R2, R3,R4, R6,R12,R13, R7,R8, R9, R10, R11, R14, R15, RS1, U4
+REVIEW REQUIRED: 15 drilled via locations intersect SMD pad copper; approve dogbones or a filled/capped via-in-pad process before PCBA.
+REFERENCE REVISION ONLY. Do not order until electrical review, thermal testing, mechanical fit, and independent Gerber review are complete.
